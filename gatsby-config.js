@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Glass`,
+    title: `Subiksha Kannan`,
     author: {
-      name: `Yinka Adedire`,
+      name: `Subiksha Kannan`,
       summary: `Self-taught front-end web dev. JAMStack.`,
     },
     description: `A minimal & beautiful gatsby personal blog starter with a nice glassmorphism UI.`,
@@ -12,16 +12,16 @@ module.exports = {
     },
     socialLinks: [
       {
-        name: 'github',
-        url: 'https://github.com',
+        name: "github",
+        url: "https://github.com",
       },
       {
-        name: 'twitter',
-        url: 'https://twitter.com',
+        name: "twitter",
+        url: "https://twitter.com",
       },
       {
-        name: 'instagram',
-        url: 'https://instagram.com',
+        name: "instagram",
+        url: "https://instagram.com",
       },
     ],
   },
@@ -31,23 +31,23 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
         name: `media`,
         path: `${__dirname}/static/media`,
       },
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: 'pages',
+        name: "pages",
         path: `${__dirname}/content/pages`,
       },
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: 'posts',
+        name: "posts",
         path: `${__dirname}/content/posts`,
       },
     },
@@ -58,7 +58,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-relative-images`,
             options: {
-              staticFolderName: 'static',
+              staticFolderName: "static",
             },
           },
           {
@@ -80,12 +80,12 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-netlify-cms',
+      resolve: "gatsby-plugin-netlify-cms",
       options: {
         modulePath: `${__dirname}/src/netlify-cms/index.js`,
         enableIdentityWidget: true,
-        publicPath: 'admin',
-        htmlTitle: 'Content Manager',
+        publicPath: "admin",
+        htmlTitle: "Content Manager",
         includeRobots: false,
       },
     },
@@ -113,7 +113,7 @@ module.exports = {
                   date: node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + node.fields.slug,
                   guid: site.siteMetadata.siteUrl + node.fields.slug,
-                  custom_elements: [{ 'content:encoded': node.html }],
+                  custom_elements: [{ "content:encoded": node.html }],
                 });
               });
             },
@@ -136,7 +136,7 @@ module.exports = {
                 }
               }
             `,
-            output: '/rss.xml',
+            output: "/rss.xml",
           },
         ],
       },
@@ -145,7 +145,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [`Source Sans Pro`, `Poppins\:400,400i,700`],
-        display: 'swap',
+        display: "swap",
       },
     },
     {
