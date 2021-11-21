@@ -1,6 +1,6 @@
 ---
-template: 'index-template'
-title: 'Gatsby Starter Glass'
+title: Subiksha Kannan
+template: index-template
 ---
 
 #Hello World
