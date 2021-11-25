@@ -5,6 +5,7 @@ tags:
   - Application
   - webRTC
   - Future
+social_image: /media/rocket.jpg
 description: This blog explains how are we Accessing & running a desktop
   applications through a browser with the help of cloud resources.
 ---
